@@ -42,3 +42,13 @@ Copying... 75% | 115.67 MB/s
 Copying... 100% | 0.00 MB/s  
 Copy complete!
 
+## **⚙️ How It Works**
+1. File Splitting: The file is divided into chunks based on the number of workers.
+2. Parallel Copying: Each worker thread copies its assigned chunk using direct I/O operations.
+3. Progress Tracking: Displays real-time percentage and transfer speed.
+
+## **🛠️ Performance Tuning**
+1. Adjust the bufferSize constant in the code (default: 4 MB) for optimal disk I/O.
+2. Increase the number of workers for multi-core processors to improve speed.
+3. Benchmark for your system to find the sweet spot for performance.
+
